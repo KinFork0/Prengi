@@ -1,0 +1,45 @@
+@use "base/variables";
+
+.end {
+    min-height: 500px;
+    padding: 50px 0 40px 0;
+    background: variables.$color-blue;
+
+    &__wrapper {
+        display: grid;
+        grid-template: repeat(1, 1fr) / repeat(1, 2.3fr 1.5fr 0.5fr 0.5fr);
+        column-gap: 80px;
+    }
+
+    &__title,
+    &__text,
+    &__subtext,
+    &__link {
+        color: variables.$color-white;
+    }
+
+    &__img,
+    &__text,
+    &__subtext {
+        margin-top: 10px;
+    }
+
+    &__content {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    &__link:hover {
+        text-decoration: none;
+        color: variables.$color-white;
+    }
+
+    &__divider {
+        width: 100%;
+        height: 1px;
+        background: variables.$color-white;
+        border: none;
+        margin-top: 40px;
+    }
+}

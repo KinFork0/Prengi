@@ -1,0 +1,30 @@
+@use "base/variables";
+
+.header {
+    min-height: 70px;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__items {
+        display: flex;
+        width: 540px;
+        justify-content: space-between;
+    }
+
+    &__list {
+        list-style: none;
+    }
+
+    &__link {
+        color: variables.$color-white;
+
+        &:hover {
+            color: variables.$color-white;
+            text-decoration: none;
+        }
+    }
+}

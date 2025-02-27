@@ -1,0 +1,59 @@
+@use "base/variables";
+
+.title {
+    &_mb0 {
+        margin-bottom: 0;
+    }
+
+    &_tac {
+        text-align: center;
+    }
+
+    &_ttu {
+        text-transform: uppercase;
+    }
+
+    &_fw900 {
+        font-weight: 900;
+    }
+
+    &_fw700 {
+        font-weight: 700;
+    }
+
+    &_fw100 {
+        font-weight: 100;
+    }
+
+    &_fz48 {
+        font-size: 48px;
+    }
+
+    &_fz42 {
+        font-size: 42px;
+    }
+
+    &_fz30 {
+        font-size: 30px;
+    }
+
+    &_fz24 {
+        font-size: 24px;
+    }
+
+    &_fz18 {
+        font-size: 18px;
+    }
+
+    &_fz16 {
+        font-size: 16px;
+    }
+
+    &_fz14 {
+        font-size: 14px;
+    }
+
+    &_fz12 {
+        font-size: 12px;
+    }
+}

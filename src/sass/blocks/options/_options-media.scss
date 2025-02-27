@@ -1,0 +1,85 @@
+@use "base/variables";
+
+@media screen and (max-width: 900px) {
+    .options {
+        min-height: 600px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .options {
+        &__wrapper {
+            grid-template: repeat(2, 1fr) / repeat(1, 400px);
+            justify-content: center;
+            column-gap: 0;
+            row-gap: 20px;
+        }
+
+        &__items-2 {
+            order: -1;
+        }
+
+        &__block {
+            &-2 {
+                left: 230px;
+            }
+
+            &-1 {
+                left: 0;
+            }
+        }
+
+        &__content {
+            align-items: flex-start;
+
+            &-2 {
+                align-items: flex-end;
+            }
+        }
+
+        &__descr {
+            text-align: left;
+
+            &-2 {
+                text-align: right;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .options {
+        &__wrapper {
+            grid-template: repeat(2, 1fr) / repeat(1, 1fr);
+        }
+
+        &__block {
+            &-2 {
+                left: 210px;
+            }
+        }
+
+        &__content {
+            padding: 0 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .options {
+        &__wrapper {
+            grid-template: repeat(2, 1fr) / repeat(1, 1fr);
+            row-gap: 40px;
+        }
+
+        &__block {
+            &-2 {
+                left: 110px;
+            }
+        }
+
+        &__content {
+            padding: 0 10px;
+        }
+    }
+}

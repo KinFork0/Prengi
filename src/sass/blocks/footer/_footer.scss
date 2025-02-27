@@ -1,0 +1,20 @@
+@use "base/variables";
+
+.footer {
+    &__wrapper {
+        display: flex;
+        margin: 40px auto 0 auto;
+        justify-content: center;
+        align-items: center;
+        width: 320px;
+        height: 18px;
+        color: variables.$color-white;
+        column-gap: 3px;
+
+        img {
+            width: 12px;
+            height: 12px;
+            object-fit: contain;
+        }
+    }
+}

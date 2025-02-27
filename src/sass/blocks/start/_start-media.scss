@@ -1,0 +1,9 @@
+@use "base/variables";
+
+@media screen and (max-width: 400px) {
+    .start {
+        &__img {
+            width: 100%;
+        }
+    }
+}

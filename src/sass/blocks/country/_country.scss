@@ -1,0 +1,40 @@
+@use "base/variables";
+
+.country {
+    padding: 20px 0;
+    min-height: 95px;
+
+    &__wrapper {
+        display: grid;
+        grid-template: repeat(1, 1fr) / repeat(1, 180px 210px 210px 220px 240px);
+        justify-content: space-between;
+    }
+
+    &__items {
+        display: grid;
+        grid-template: repeat(1, 55px) / repeat(1, 30px 1fr);
+        column-gap: 10px;
+    }
+
+    &__flag {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    &__name {
+        color: variables.$color-black-brown;
+    }
+
+    a,
+    address {
+        display: block;
+        font-style: normal;
+        line-height: 15px;
+        color: variables.$color-black-brown;
+
+        &:hover {
+            text-decoration: none;
+            color: variables.$color-black-brown;
+        }
+    }
+}

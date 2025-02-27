@@ -1,0 +1,12 @@
+@use "base/variables";
+
+@media screen and (max-width: 1000px) {
+    .prengi {
+        &__wrapper {
+            flex-wrap: wrap;
+            justify-content: center;
+            column-gap: 40px;
+            row-gap: 20px;
+        }
+    }
+}

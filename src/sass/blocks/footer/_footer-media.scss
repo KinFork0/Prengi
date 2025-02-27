@@ -1,0 +1,10 @@
+@use "base/variables";
+
+@media screen and (max-width: 400px) {
+    .footer {
+        &__wrapper {
+            width: 160px;
+            height: 20px;
+        }
+    }
+}

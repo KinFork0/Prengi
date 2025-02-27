@@ -1,0 +1,21 @@
+@use "base/variables";
+
+.start {
+    min-height: 700px;
+    padding: 80px 0;
+
+    &__img {
+        display: block;
+        margin: 0 auto;
+    }
+
+    &__title,
+    &__descr {
+        margin-top: 70px;
+        color: variables.$color-black-grey;
+    }
+
+    &__descr {
+        margin-top: 0;
+    }
+}

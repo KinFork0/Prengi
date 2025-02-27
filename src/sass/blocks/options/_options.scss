@@ -1,0 +1,62 @@
+@use "base/variables";
+
+.options {
+    min-height: 580px;
+    padding: 80px 0 180px 0;
+    background: url('../img/options/background.jpg') center center / cover no-repeat;
+
+    &__title {
+        color: variables.$color-white;
+    }
+
+    &__wrapper {
+        margin-top: 80px;
+        display: grid;
+        grid-template: repeat(1, 1fr) / repeat(2, 1fr);
+        column-gap: 90px;
+    }
+
+    &__items {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        position: relative;
+    }
+
+    &__block {
+        position: absolute;
+        width: 170px;
+        height: 170px;
+        background: rgba($color: variables.$color-blue, $alpha: 0.5);
+
+        &-2 {
+            left: 0;
+        }
+    }
+
+    &__content {
+        padding: 0 40px;
+        margin-top: 30px;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        color: variables.$color-white;
+
+        &-2 {
+            align-items: flex-start;
+        }
+    }
+
+    &__descr {
+        z-index: 1;
+        margin-top: 10px;
+        text-align: right;
+
+        &-2 {
+            text-align: left;
+        }
+    }
+}

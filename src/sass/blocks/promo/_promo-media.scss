@@ -1,0 +1,68 @@
+@use "base/variables";
+
+@media screen and (max-width: 1200px) {
+    .promo {
+        min-height: 690px;
+
+        &__wrapper {
+            grid-template: repeat(1, 470px) / repeat(1, 640px 358px);
+        }
+
+        .slick-next {
+            left: -50px;
+        }
+
+        .slick-prev {
+            left: -150px;
+        }
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .promo {
+        &__wrapper {
+            grid-template: repeat(1, 470px) / repeat(1, 580px 358px);
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .promo {
+        &__wrapper {
+            grid-template: repeat(1, 470px) / repeat(1, 480px 358px);
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .promo {
+        &__wrapper {
+            grid-template: repeat(1, 470px) / repeat(1, 450px 290px);
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .promo {
+        &__wrapper {
+            grid-template: repeat(1, 470px) / repeat(1, 1fr);
+        }
+
+        &__carousel {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .promo {
+        &__wrapper {
+            grid-template: repeat(1, 360px) / repeat(1, 1fr);
+        }
+
+        &__title,
+        &__descr {
+            line-height: 20px;
+        }
+    }
+}

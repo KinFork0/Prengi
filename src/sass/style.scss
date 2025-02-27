@@ -1,0 +1,41 @@
+@use "sass:meta";
+
+@include meta.load-css('base/variables');
+@include meta.load-css('base/mixins');
+@include meta.load-css('blocks/container/container');
+@include meta.load-css('blocks/container/container-media');
+@include meta.load-css('blocks/title/title');
+@include meta.load-css('blocks/title/title-media');
+@include meta.load-css('blocks/button/button');
+@include meta.load-css('blocks/button/button-media');
+@include meta.load-css('blocks/end/end');
+@include meta.load-css('blocks/end/end-media');
+@include meta.load-css('blocks/footer/footer');
+@include meta.load-css('blocks/footer/footer-media');
+@include meta.load-css('blocks/header/header');
+@include meta.load-css('blocks/header/header-media');
+@include meta.load-css('blocks/promo/promo');
+@include meta.load-css('blocks/promo/promo-media');
+@include meta.load-css('blocks/prengi/prengi');
+@include meta.load-css('blocks/prengi/prengi-media');
+@include meta.load-css('blocks/promo_carousel/promo_carousel');
+@include meta.load-css('blocks/promo_carousel/promo_carousel-media');
+@include meta.load-css('blocks/main_carousel/main_carousel');
+@include meta.load-css('blocks/main_carousel/main_carousel-media');
+@include meta.load-css('blocks/advantages/advantages');
+@include meta.load-css('blocks/advantages/advantages-media');
+@include meta.load-css('blocks/options/options');
+@include meta.load-css('blocks/options/options-media');
+@include meta.load-css('blocks/start/start');
+@include meta.load-css('blocks/start/start-media');
+@include meta.load-css('blocks/subpromo/subpromo');
+@include meta.load-css('blocks/subpromo/subpromo-media');
+@include meta.load-css('blocks/country/country');
+@include meta.load-css('blocks/country/country-media');
+@include meta.load-css('blocks/menu/menu');
+@include meta.load-css('blocks/menu/menu-media');
+
+* {
+    font-family: "Roboto", sans-serif;
+    scroll-behavior: smooth;
+}

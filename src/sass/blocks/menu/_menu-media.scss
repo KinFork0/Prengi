@@ -1,0 +1,11 @@
+@use "base/variables";
+
+@media screen and (min-width: 701px) {
+    .menu {
+        display: none;
+    }
+
+    .hamburger {
+        display: none;
+    }
+}

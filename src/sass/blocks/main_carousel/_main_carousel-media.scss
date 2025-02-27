@@ -1,0 +1,68 @@
+@use "base/variables";
+
+@media screen and (max-width: 1200px) {
+    .main__carousel {
+        .slick-prev {
+            left: -30px;
+        }
+
+        .slick-next {
+            right: -30px;
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .main__carousel {
+        .catalog__tabs {
+            display: grid;
+            grid-template: repeat(2, 70px) / repeat(3, 1fr);
+            height: 100%;
+        }
+
+        .border-top {
+            width: 100%;
+            border-top: 1px solid variables.$color-silver;
+        }
+
+        .border-right {
+            height: 70px;
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .main__carousel {
+        min-height: 813px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .main__carousel {
+        min-height: 760px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .main__carousel {
+        min-height: 706px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .main__carousel {
+        .catalog__tabs {
+            grid-template: repeat(3, 70px) / repeat(2, 1fr);
+        }
+
+        &__title {
+            line-height: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .main__carousel {
+        min-height: 650px;
+    }
+}
